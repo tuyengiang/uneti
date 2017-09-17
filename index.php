@@ -1,152 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Phần mềm Tra Cứu Thông Tin Sinh Viên Nhanh Nhất</title>
 	<meta charset="utf-8"/>
-	<title>Trang Tra Cứu Thông Tin Sv - Uneti</title>
-
 	<style>
-		*{
-			padding:0; margin:0;
-			font-family:roboto,arial,ubuntu;
-			font-size:15px;
-		}
-
 		body{
-			background:white;
+			margin:0;
+			padding:0;
+			font-family:ubuntu;
+			background:url("img/nen.jpg");
 		}
-		#header{
-			width:100%;
-			height:140px;
-			background:white;
-			box-shadow:2px 2px 2px 2px rgba(0,0,0,0.1);
-		}
-		#header-top{
-			width:48%;
-			margin:auto;
-			height:140px;
-		}
-		#logo{
-			float:left;
-			width:25%;
-			height:140px;
-
-		}
-		#logo img{
-			width:100%;
-			height:140px;
-		}
-		#text{
-			float:left;
-			width:70%;
-			padding-top:80px;
-			color:#1C86EE;
-			font-size:30px;
-			font-weight:bold;
-		}
-		/**main**/
-
 		#main{
-			width:80%;
+			width:42%;
+			height:230px;
 			margin:auto;
-			height:300px;
-			margin-top:10px;
-		}
-		#form{
-			width:50%;
-			height:200px;
-			margin-top:70px;
+			margin-top:150px;
+			background:white;
+			opacity:0.8;
 			border-radius:0.5em;
-			box-shadow:2px 2px 2px 2px rgba(0,0,0,0.1);
 		}
-		#bottom{
-			width:100%;
-			height:150px;
-			text-align:center;
-			color:#1C86EE;
-			font-weight:bold;
-			font-size:30px;
-			padding-top:30px;
-			box-shadow:2px 2px 5px 2px rgba(0,0,0,0.1);
-		}
-		/***/
-		h2{
-			width:100%;
-			height:60px;
-			text-align:center;
-			color:white;
-			line-height:60px;
-			font-size:20px;
-			border-top-left-radius:0.5em;
-			border-top-right-radius:0.5em;
-			background:#1C86EE;
-		}
-		form{
-			width:100%;
-			height:110px;
+		#main img{
+			float:left;
 			margin-top:50px;
+			width:30%;
+			height:120px;
+
 		}
-		input[type="number"]{
-			width:70%;
-			height:40px;
-			border:1px solid #ddd;
-			text-align:center;
-			border-radius:0.3em;
-			font-size:20px;
+		
+		input{
+			height:30px;
+			width:40%;
+			margin-top:100px;
+			padding-left:10px;
+			font-size:15px;
 			font-weight:bold;
-			color:#1C86EE;
 		}
 		button{
-			width:25%;
+			width:20%;
+			margin-top:100px;
 			height:40px;
 			background:#1C86EE;
-			border:none;
 			color:white;
-			border-radius:0.3em;
-			font-size:18px;
+			border:none;
 			font-weight:bold;
+			font-size:18px;
 			cursor:pointer;
 			transition:1s ease all;
 		}
 		button:hover{
 			transition:1s ease all;
-			background:#00688B;
+			background:blue;
+		}
+		h6{
+			width:60%;
+			margin:auto;
+			text-align:center;
+			font-size:16px;
+			color:#1C86EE;
 		}
 
-
 	</style>
-
 </head>
 <body>
-	<div id="header">
-		<div id="header-top">
-			<div id="logo">
-				<img src="img/logo.jpg" title="Uneti">
-			</div><!--logo-->
-
-			<div id="text">
-				Tra  Cứu Thông Tin Sv - Uneti
-			</div><!--tẽt-->
-		</div><!--header-->
-
-	</div><!--header-->
-
 	<div id="main">
-		<center><div id="form">
-			<h2>Tra Cứu Thông Tin Sinh Viên</h2>
-			<form method="get" action="Profile.php">
-				<label>
-					<input type="number" name="msv" placeholder="Nhập Mã SV">
-					<button type="submit">Tra Cứu</button>
+		<img src="img/logo.jpg">
+		<form method="get" action="Profile.php">
+		<label>
+			<input type="text" name="msv" placeholder="Nhập Mã SV">
+			<button type="submit">Tra Cứu</button>
+		</label>
 
-				</label>
-			</form>
+		</form>
+		<div style="clear:left;"></div>
+		<h6>Building: Tuyển Giảng &copy;</h6>
 
-		</div></center><!--form-->
 
 	</div><!--main-->
-	<div id="bottom">
-		Version 0.0.01 Alpha
-
-	</div><!--bottom-->
 </body>
 </html>

@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	var topmenu=$("#menu-tab");
+	var topmenu=$("#header");
 	$(window).scroll(function(){
-		if($(this).ScrollTop()>150){
-			topmenu.show();
+		if($(this).scrollTop()>50){
+			topmenu.css("background","white");
 		}else{
 			topmenu.hide();
 		}

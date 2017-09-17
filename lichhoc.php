@@ -20,45 +20,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Thông Tin Sv</title>
+	<title>Lịch Học Sinh Viên</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<srcipt src="js/jquery.js"></srcipt>
+	<srcipt src="js/main.js"></srcipt>
+
 </head>
 <body>
   <div id="website">
 	<div id="header">
-		
-		<div id="logo">
-				<img src="img/logo.jpg" title="Uneti">
-		</div><!--logo-->
-		<div id="menu">
-			<ul>
-				<li><a href="index.php">Trang Chủ</a></li>
-				<li><a href="lichhoc.php">Lịch Học</a></li>
-				<li><a href="congno.php">Công Nợ</a></li>
-			</ul>
+		<div id="header-top">
+			<div id="logo">
+				<a href="index.php"><img src="img/logo2.png" title="Trang Chu"></a>
+			</div><!--logo-->
+			<div id="menu">
+				<ul>
+					<li><a href="#">Giới Thiệu</a></li>
+					<li><a href="Profile.php">Thông Tin</a></li>
+					<li><a href="lichhoc.php" class="active">Lịch Học</a></li>
+					<li><a href="bangdiem.php">Bảng Điểm</a></li>
+					<li><a href="index.php">Đăng Xuất</a></li>
+				</ul>
+			</div><!--menu-->
 
-		</div><!--menu-->
+		</div><!--header-top-->
 	</div><!--header-->
-	<div id="title">Lịch Học Tập</div>
-	<div id="tbk">
-		
-		<div class="tbk-1">
-			<?php
-				$tkb=$html->find("table#detailTbl");
+	<div id="main">
+		<div id="title">&hearts; Lịch Học Tập &hearts;</div>
+		<div id="tbk">
+			
+			<div class="tbk-1">
+				<?php
+					$tkb=$html->find("table#detailTbl");
 
-				echo "<table class='table'>".$tkb[0]->innertext. "</table>";
+					echo "<table class='table'>".$tkb[0]->innertext. "</table>";
 
 
-			?>
+				?>
 
-		</div>
+			</div>
+		</div><!--main-->
+
 	</div><!--main-->
-
-	<div id="bottom">
-		&nbsp; Version 0.0.001  Alpha
-
-	</div><!--bottom-->
 </div>
 </body>
 </html>
