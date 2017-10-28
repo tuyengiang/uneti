@@ -1,80 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Phần mềm Tra Cứu Thông Tin Sinh Viên Nhanh Nhất</title>
-	<meta charset="utf-8"/>
-	<style>
-		body{
-			margin:0;
-			padding:0;
-			font-family:ubuntu;
-			background:url("img/nen.jpg");
-		}
-		#main{
-			width:42%;
-			height:230px;
-			margin:auto;
-			margin-top:150px;
-			background:white;
-			opacity:0.8;
-			border-radius:0.5em;
-		}
-		#main img{
-			float:left;
-			margin-top:50px;
-			width:30%;
-			height:120px;
+	<title>UnetiForm - Bảng Điểm Sinh Viên
+	</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Người Vô Danh">
+	<meta name="description" content="Ứng Dụng Web Tra Cứu Thông Tin Sinh Viên Uneti Nhanh Nhất">
+	<meta name="keyword" content="tra cứu thông tin,tra cuu diem uneti,tra cuu lich hoc">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-tap/slick.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-tap/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery.bxslider.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/title.gif">
+	<link rel="icon" href="img/title.gif" type="image/x-icon"/>
 
-		}
-		
-		input{
-			height:30px;
-			width:40%;
-			margin-top:100px;
-			padding-left:10px;
-			font-size:15px;
-			font-weight:bold;
-		}
-		button{
-			width:20%;
-			margin-top:100px;
-			height:40px;
-			background:#1C86EE;
-			color:white;
-			border:none;
-			font-weight:bold;
-			font-size:18px;
-			cursor:pointer;
-			transition:1s ease all;
-		}
-		button:hover{
-			transition:1s ease all;
-			background:blue;
-		}
-		h6{
-			width:60%;
-			margin:auto;
-			text-align:center;
-			font-size:16px;
-			color:#1C86EE;
-		}
-
-	</style>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/slick/slick-tap/slick.min.js"></script>
+	<script src="js/wow/dist/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+			new WOW().init();
+	</script>
 </head>
+
 <body>
-	<div id="main">
-		<img src="img/logo.jpg">
-		<form method="get" action="Profile.php">
-		<label>
-			<input type="text" name="msv" placeholder="Nhập Mã SV">
-			<button type="submit">Tra Cứu</button>
-		</label>
-
-		</form>
-		<div style="clear:left;"></div>
-		<h6>Building: Tuyển Giảng &copy;</h6>
-
-
-	</div><!--main-->
+	<?php require_once("temp/header.php");?>
 </body>
 </html>

@@ -20,57 +20,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Thông Tin Điểm Sinh Viên</title>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="css/style2.css"/>
+	<title>UnetiForm - Bảng Điểm Sinh Viên
+	</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Nguyễn Tuyển Giảng">
+	<meta name="description" content="Ứng Dụng Web Tra Cứu Thông Tin Sinh Viên Uneti Nhanh Nhất">
+	<meta name="keyword" content="tra cứu thông tin,tra cuu diem uneti,tra cuu lich hoc">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style-main.css" type="text/css">
+	<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-tap/slick.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-tap/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery.bxslider.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/title.gif">
+	<link rel="icon" href="img/title.gif" type="image/x-icon"/>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/slick/slick-tap/slick.min.js"></script>
+	<script src="js/wow/dist/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+			new WOW().init();
+	</script>
 </head>
+
 <body>
-  <div id="website">
-	<div id="header">
-		<div id="header-top">
-			<div id="logo">
-				<a href="index.php"><img src="img/logo2.png" title="Trang Chu"></a>	
-			</div><!--logo-->
-			<div id="menu">
-				<ul>
-					<li><a href="#">Giới Thiệu</a></li>
-					<li><a href="Profile.php">Thông Tin</a></li>
-					<li><a href="lichhoc.php">Lịch Học</a></li>
-					<li><a href="bangdiem.php" class="active">Bảng Điểm</a></li>
-					<li><a href="index.php">Đăng Xuất</a></li>
-				</ul>
-			</div><!--menu-->
 
-		</div><!--header-top-->
-	</div><!--header-->
+	<?php require_once("temp/headerpro.php");?>
+<div id="index-main" class="wow bounceInUp">
 
-
-
-<div id="main">
-
-	<div id="title">&hearts; Thông Tin Điểm &hearts;</div>
-		<div id="main-contet">
-			<div class="bang-diem-1">
-				<?php 
-					$bangDiemArray = $html->find("table.tblKetQuaHocTap");
-					echo
-						"<table class='table-bang-diem-1'>".
-							 $bangDiemArray[0]->innertext 
-						 .'</table>';
-				?>
-			</div>
+	<div class="main-title"><i class="fa fa-calculator"></i> BẢNG ĐIỂM SINH VIÊN</div>
+			
 
 			<div class="bang-diem-2">
 				<?php 
+					$bangDiemArray = $html->find("table.tblKetQuaHocTap");
 					 echo "<table class='table-bang-diem-2'>"
 					 		. $bangDiemArray[1]->innertext 
 					 	. "</table>";
 				?>
 			</div>
-		</div>
-		<div style="clear:left;"></div>
+			<div id="menu-class" style="width:40%;margin:auto;margin-top:30px;margin-bottom:20px;">
+					<ul>
+						<li><a href="lichhoc.php"><i class="fa fa-calendar"></i> Lịch Học</a></li>
+						<li><a href="bangdiem.php" class="active"><i class="fa fa-calculator"></i> Bảng Điểm</a></li>
+						 <li><a href="lichthi.php"><i class="fa fa-calendar"></i> Lịch Thi</a></li>
+					</ul>
+
+			 </div><!--menu-class-->
 	
 </div><!--main-->
+<div style="clear:left;"></div>
+<?php require_once("temp/bottom.php");?>
 
 </body>
 </html>
